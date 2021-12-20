@@ -1,0 +1,12 @@
+.gitignore
+.git
+.github
+.idea
+.vscode
+Thumbs.db
+.DS_Store
+.env*
+.dockerignore
+Dockerfile
+node_modules
+*.md
