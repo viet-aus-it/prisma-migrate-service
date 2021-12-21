@@ -48,6 +48,7 @@ services:
     env_file: ".env"
 
   db-deploy:
+    image: ghcr.io/viet-aus-it/prisma-migrate-service
     depends_on:
       - db
     env_file: ".env"
