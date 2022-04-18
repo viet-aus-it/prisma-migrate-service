@@ -6,12 +6,6 @@ using Node 16 and Prisma 3.0.
 ## Prerequisites
 
 - Docker 20+, Docker Compose 1.28+
-- For macOS and Windows: The easiest way is to install [Docker Desktop](https://www.docker.com/products/docker-desktop "docker desktop").
-  This will come with Docker and Docker Compose in a bundle.
-- For Linux Users: You would need to:
-    - Install [Docker Engine](https://docs.docker.com/engine/install/#server "docker engine")
-    - Follow the [Linux post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/ "Linux post-installation steps").
-    - Install [Docker Compose](https://docs.docker.com/compose/install/ "docker compose")
 - Valid Prisma Migration folder
 
 ## Building this service
