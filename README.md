@@ -1,7 +1,7 @@
 # Prisma Migrate Service
 
 This service is used to run DB migrations/deployments in production
-using Node 16 and Prisma 3.0.
+using Node 18 and Prisma 4.0.
 
 ## Prerequisites
 

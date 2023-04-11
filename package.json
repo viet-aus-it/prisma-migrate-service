@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "DB Migration Service using Prisma 3.0",
   "engines": {
-    "node": "^16.0.0",
-    "pnpm": "^7.0.0"
+    "node": "^18.0.0",
+    "pnpm": "^8.0.0"
   },
   "repository": {
     "type": "git",
