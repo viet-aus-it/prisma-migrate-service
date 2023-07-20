@@ -1,7 +1,7 @@
 {
   "name": "@ivet-aus-it/db-migrate-service",
   "version": "1.0.0",
-  "description": "DB Migration Service using Prisma 3.0",
+  "description": "DB Migration Service using Prisma 5",
   "engines": {
     "node": "^18.0.0",
     "pnpm": "^8.0.0"
@@ -18,6 +18,6 @@
     "prisma:deploy": "prisma migrate deploy"
   },
   "devDependencies": {
-    "prisma": "4.12.0"
+    "prisma": "^5.0.0"
   }
 }
