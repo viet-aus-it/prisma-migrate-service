@@ -38,7 +38,7 @@ docker run \
 ```yaml
 services:
   db:
-    image: postgres:13
+    image: postgres:15
     env_file: ".env"
 
   db-deploy:
@@ -46,6 +46,8 @@ services:
     depends_on:
       - db
     env_file: ".env"
+    volumes:
+      - ./prisma:/src/prisma
 ```
 
 ```bash

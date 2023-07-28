@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mariadb:11
+    restart: on-failure
+    env_file: ".env"
+    container_name: test_db
+    ports:
+      - 3306:3306
+
+  db-deploy:
+    image: ghcr.io/viet-aus-it/prisma-migrate-service
+    depends_on:
+      - db
+    env_file: ".env"
+    container_name: test_db_deploy_pg
+    volumes:
+      - ./prisma:/src/prisma

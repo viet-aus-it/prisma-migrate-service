@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: on-failure
+    env_file: ".env"
+    container_name: test_db
+    ports:
+      - 5432:5432
+
+  db-deploy:
+    image: ghcr.io/viet-aus-it/prisma-migrate-service
+    depends_on:
+      - db
+    env_file: ".env"
+    container_name: test_db_deploy_pg
+    volumes:
+      - ./prisma:/src/prisma
