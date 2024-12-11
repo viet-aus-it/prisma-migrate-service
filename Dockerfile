@@ -1,9 +1,9 @@
-FROM node:18.15-bullseye-slim
+FROM node:22.12-slim
 WORKDIR /src
 
 COPY ./package.json ./package.json
 COPY ./pnpm-lock.yaml ./pnpm-lock.yaml
-RUN npm install -g pnpm@8 && \
+RUN npm install -g pnpm@9 && \
     pnpm install
 
 USER node
