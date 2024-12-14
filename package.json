@@ -15,7 +15,7 @@
     "url": "https://github.com/viet-aus-it/prisma-migrate-service"
   },
   "scripts": {
-    "prisma:deploy": "prisma migrate deploy --skip-generate"
+    "prisma:deploy": "prisma migrate deploy"
   },
   "devDependencies": {
     "prisma": "^6.0.1"
