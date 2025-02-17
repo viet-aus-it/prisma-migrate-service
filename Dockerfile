@@ -10,7 +10,7 @@ RUN set -xe && \
 
 COPY ./package.json ./package.json
 COPY ./pnpm-lock.yaml ./pnpm-lock.yaml
-RUN npm install -g pnpm@9 && \
+RUN npm install -g pnpm@10 && \
     pnpm install
 
 ENV NODE_ENV=production
