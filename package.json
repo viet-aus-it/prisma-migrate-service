@@ -18,6 +18,9 @@
     "prisma:deploy": "prisma migrate deploy"
   },
   "devDependencies": {
-    "prisma": "^6.3.1"
+    "prisma": "^6.6.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["@prisma/engines", "prisma", "esbuild"]
   }
 }
