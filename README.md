@@ -1,7 +1,7 @@
 # Prisma Migrate Service
 
 This service is used to run DB migrations/deployments in production
-using Node 18 and Prisma 4.0.
+using Node 22 and Prisma 6.16.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ docker run \
 ```yaml
 services:
   db:
-    image: postgres:15
+    image: postgres:17
     env_file: ".env"
 
   db-deploy:
