@@ -22,6 +22,7 @@ docker run \
   --rm \
   -e "DATABASE_URL=postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public" \
   --volume /path/to/prisma/migration/folder:/src/prisma \
+  --volume /path/to/prisma.config.ts:/prisma.config.ts
   ghcr.io/viet-aus-it/db-migrate-service
 
 # Using an env file
@@ -30,6 +31,7 @@ docker run \
   --rm \
   --env-file ./.env \
   --volume /path/to/prisma/migration/folder:/src/prisma \
+  --volume /path/to/prisma.config.ts:/prisma.config.ts \
   ghcr.io/viet-aus-it/db-migrate-service
 ```
 
