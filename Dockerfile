@@ -1,4 +1,4 @@
-FROM node:22.20-slim
+FROM node:24.14-slim
 WORKDIR /src
 
 RUN set -xe && \
